@@ -13,7 +13,7 @@ provider "linode" {
 
 resource "linode_lke_cluster" "lke_cluster" {
   label = "learn-k8s"
-  k8s_version = "1.21"
+  k8s_version = "1.22"
   region = "ap-south"
 
   pool {
