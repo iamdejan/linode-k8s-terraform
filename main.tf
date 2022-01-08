@@ -5,6 +5,12 @@ terraform {
         version = "1.25.0"
       }
   }
+
+  backend "etcdv3" {
+    endpoints = ["139.177.186.99:2379"]
+    lock      = true
+    prefix    = "terraform-state/"
+  }
 }
 
 provider "linode" {
