@@ -14,7 +14,7 @@ terraform {
 }
 
 provider "linode" {
-  
+  token = var.token
 }
 
 resource "linode_lke_cluster" "lke_cluster" {
