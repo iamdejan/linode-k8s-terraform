@@ -1,1 +1,3 @@
-variable "token" {}
+variable "token" {
+  description = "Linode API token"
+}
