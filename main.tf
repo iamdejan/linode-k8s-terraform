@@ -9,7 +9,7 @@ terraform {
   backend "etcdv3" {
     endpoints = ["139.177.186.99:2379"]
     lock      = true
-    prefix    = "terraform-state/"
+    prefix    = "linode-k8s-terraform/"
   }
 }
 
